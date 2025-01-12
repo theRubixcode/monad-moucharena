@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production node ./index.js",
+    "start": "node ./deploy/deploy-commands.js && node ./index.js",
     "dev": "node ./deploy/deploy-commands.js && nodemon ./index.js",
     "lint": "eslint"
   },
